@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF54ABED1C22C08000A7464D /* NSDate+Mcdate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF54ABEC1C22C08000A7464D /* NSDate+Mcdate.m */; };
 		EF7AAF841C22503D00B2907B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7AAF831C22503D00B2907B /* main.m */; };
 		EF7AAF871C22503D00B2907B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7AAF861C22503D00B2907B /* AppDelegate.m */; };
 		EF7AAF8A1C22503D00B2907B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7AAF891C22503D00B2907B /* ViewController.m */; };
@@ -15,7 +16,6 @@
 		EF7AAF921C22503D00B2907B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF7AAF901C22503D00B2907B /* LaunchScreen.storyboard */; };
 		EF7AAF9D1C22503D00B2907B /* ___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7AAF9C1C22503D00B2907B /* ___Tests.m */; };
 		EF7AAFA81C22503D00B2907B /* ___UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7AAFA71C22503D00B2907B /* ___UITests.m */; };
-		EF7AAFC01C22590500B2907B /* NSDate+Mcdate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7AAFBF1C22590500B2907B /* NSDate+Mcdate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF54ABEB1C22C08000A7464D /* NSDate+Mcdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Mcdate.h"; sourceTree = "<group>"; };
+		EF54ABEC1C22C08000A7464D /* NSDate+Mcdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Mcdate.m"; sourceTree = "<group>"; };
 		EF7AAF7F1C22503D00B2907B /* 时间类.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "时间类.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF7AAF831C22503D00B2907B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EF7AAF851C22503D00B2907B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,8 +54,6 @@
 		EF7AAFA31C22503D00B2907B /* 时间类UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "时间类UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF7AAFA71C22503D00B2907B /* ___UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___UITests.m"; sourceTree = "<group>"; };
 		EF7AAFA91C22503D00B2907B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF7AAFBE1C22590500B2907B /* NSDate+Mcdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Mcdate.h"; sourceTree = "<group>"; };
-		EF7AAFBF1C22590500B2907B /* NSDate+Mcdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Mcdate.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +104,9 @@
 		EF7AAF811C22503D00B2907B /* 时间类 */ = {
 			isa = PBXGroup;
 			children = (
+				EF54ABEB1C22C08000A7464D /* NSDate+Mcdate.h */,
+				EF54ABEC1C22C08000A7464D /* NSDate+Mcdate.m */,
 				EF7AAF851C22503D00B2907B /* AppDelegate.h */,
-				EF7AAFBE1C22590500B2907B /* NSDate+Mcdate.h */,
-				EF7AAFBF1C22590500B2907B /* NSDate+Mcdate.m */,
 				EF7AAF861C22503D00B2907B /* AppDelegate.m */,
 				EF7AAF881C22503D00B2907B /* ViewController.h */,
 				EF7AAF891C22503D00B2907B /* ViewController.m */,
@@ -277,7 +277,7 @@
 			files = (
 				EF7AAF8A1C22503D00B2907B /* ViewController.m in Sources */,
 				EF7AAF871C22503D00B2907B /* AppDelegate.m in Sources */,
-				EF7AAFC01C22590500B2907B /* NSDate+Mcdate.m in Sources */,
+				EF54ABED1C22C08000A7464D /* NSDate+Mcdate.m in Sources */,
 				EF7AAF841C22503D00B2907B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

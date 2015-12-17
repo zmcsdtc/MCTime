@@ -76,6 +76,35 @@
  */
 + (NSString *)datestrFromDate:(NSDate *)date
                withDateFormat:(NSString *)format;
+/**
+ *  根据date对象获取日-周几
+ */
+- (NSInteger)day;
+/**
+ *  根据date对象获取月
+ */
+- (NSInteger)month;
+/**
+ *  根据date获取对象获取年
+ */
+- (NSInteger)year;
+/**
+ *  根据date获取这个月第一天是周几 周日是0
+ */
+- (NSInteger)firstWeekdayInThisMonth;
+/**
+ *  这个月的天数
+ */
+- (NSInteger)totaldaysInThisMonth;
+/**
+ *  上一个月
+ */
+- (NSDate *)lastMonth;
+/**
+ *  下一个月
+ */
+- (NSDate*)nextMonth;
+
 #pragma mark---项目需要的
 - (BOOL)isToday;
 
@@ -97,10 +126,4 @@
  **/
 + (NSInteger)acquireWeekDayFromDate:(NSDate*)date;
 
-- (NSInteger)day;
-- (NSInteger)month;
-- (NSInteger)year;
-
-/* 从时间戳获取特定格式的时间字符串 */
-+ (NSString *)stringWithTimestamp:(NSTimeInterval)tt format:(NSString *)format;
 @end
