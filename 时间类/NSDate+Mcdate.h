@@ -1,5 +1,5 @@
 //
-//  NSData+MCdate.h
+//  NSDate+Mcdate.h
 //  时间类
 //
 //  Created by ios-4 on 15/12/17.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSData (MCdate)
+@interface NSDate (Mcdate)
 /**
  *  根据秒返回时间
  *
@@ -76,4 +76,31 @@
  */
 + (NSString *)datestrFromDate:(NSDate *)date
                withDateFormat:(NSString *)format;
+#pragma mark---项目需要的
+- (BOOL)isToday;
+
++ (NSDate *)dateStartOfDay:(NSDate *)date;
+
+/**
+ Adjust firstDate and secondDate is in the same day or not.
+ **/
++ (BOOL)isSameDayWithDate:(NSDate*)firstDate andDate:(NSDate*)secondDate;
+
++ (BOOL)isSameDayWithTime:(NSTimeInterval )firstTime andTime:(NSTimeInterval )secondTime;
+/**
+ Return the 0 o'clock time of the "date".
+ **/
++ (NSDate*)acquireTimeFromDate:(NSDate*)date;
+
+/**
+ Acquire the week index from date.
+ **/
++ (NSInteger)acquireWeekDayFromDate:(NSDate*)date;
+
+- (NSInteger)day;
+- (NSInteger)month;
+- (NSInteger)year;
+
+/* 从时间戳获取特定格式的时间字符串 */
++ (NSString *)stringWithTimestamp:(NSTimeInterval)tt format:(NSString *)format;
 @end
