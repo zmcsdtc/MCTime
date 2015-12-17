@@ -10,6 +10,20 @@
 
 @interface NSData (MCdate)
 /**
+ *  根据秒返回时间
+ *
+ *  @param seconds 秒数
+ *
+ *  @return 时间字符串
+ */
++ (NSString *)dateWithSeconds:(NSUInteger)seconds;
+
+/**
+ *  获取当前的时间
+ */
++(NSString*)getCurrentTimeWwithdateformatter:(NSString*)dateformatter;
+
+/**
  *  字符串转NSDate
  *
  *  @param theTime 字符串时间

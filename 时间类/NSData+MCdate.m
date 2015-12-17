@@ -11,6 +11,26 @@
 static NSDateFormatter *dateFormatter;
 @implementation NSDate (MCdate)
 
++ (NSString *)dateWithSeconds:(NSUInteger)seconds {
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:seconds];
+    NSString *str = [NSString stringWithFormat:@"%@", date];
+    NSArray *array = [str componentsSeparatedByString:@" "];
+    NSString *result = [array objectAtIndex:0];
+    if (array.count == 3) {
+        result = [NSString stringWithFormat:@"%@ %@", result, [array objectAtIndex:1]];
+    }
+    return result;
+}
+
++(NSString*)getCurrentTimeWwithdateformatter:(NSString*)dateformatter{
+    NSDate *  timeDate=[NSDate date];
+    NSDateFormatter  *datematter=[[NSDateFormatter alloc] init];
+    [datematter setDateFormat:dateformatter];
+    NSString *  timeString=[datematter stringFromDate:timeDate];
+    return timeString;
+}
+
+
 +(NSDateFormatter *)defaultFormatter
 {
     static dispatch_once_t onceToken;
