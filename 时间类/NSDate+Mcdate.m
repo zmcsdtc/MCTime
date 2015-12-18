@@ -123,13 +123,7 @@ static NSDateFormatter *dateFormatter;
     NSDate *newDate = [[NSCalendar currentCalendar] dateByAddingComponents:dateComponents toDate:self options:0];
     return newDate;
 }
-+(NSString *)stringWithTimestamp:(NSTimeInterval)tt format:(NSString *)format
-{
-    NSDate *date = [NSDate dateWithTimeIntervalSince1970:tt];
-    NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:format];
-    return [formatter stringFromDate:date];
-}
+
 #pragma mark----项目需要的
 - (BOOL)isToday
 {

@@ -106,7 +106,15 @@
 - (NSDate*)nextMonth;
 
 #pragma mark---项目需要的
+/**
+ *  是否是今天
+ */
 - (BOOL)isToday;
+/**
+ *  日期是都是同一天
+ */
+-(BOOL)isSameDayWithDate:(NSDate*)date;
+
 
 + (NSDate *)dateStartOfDay:(NSDate *)date;
 
